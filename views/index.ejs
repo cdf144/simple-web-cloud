@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MySQL Data Display</title>
+  </head>
+  <body>
+    <h1>MySQL Data</h1>
+    <ul id="users-list">
+      <% users.forEach(user => { %>
+      <li><%= user.id %> - <%= user.name %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
